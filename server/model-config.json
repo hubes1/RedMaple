@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "TblDnaSeq": {
+    "dataSource": "postgresDS",
+    "public": true
+  },
+  "TblDnaExtraction": {
+    "dataSource": "postgresDS",
+    "public": true
+  },
+  "TblNgs": {
+    "dataSource": "postgresDS",
+    "public": true
+  },
+  "TblProbeEingang": {
+    "dataSource": "postgresDS",
+    "public": true
+  },
+  "TblPatient": {
+    "dataSource": "postgresDS",
+    "public": true
+  },
+  "TblPathogen": {
+    "dataSource": "postgresDS",
+    "public": true
+  }
+}
