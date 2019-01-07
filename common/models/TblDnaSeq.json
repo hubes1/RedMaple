@@ -7,7 +7,7 @@
       "table": "tbl_dna_seq"
     },
     "relations": {
-      "pFkrel": {
+      "toDnaExtraction": {
         "model": "TblDnaExtraction",
         "type": "belongsTo",
         "foreignKey": "prepId"

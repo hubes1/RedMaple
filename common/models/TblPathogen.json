@@ -6,7 +6,13 @@
       "schema": "public",
       "table": "tbl_pathogen"
     },
-    "relations": {}
+    "relations": {
+      "toNgs": {
+        "model": "TblNgs",
+        "type": "hasMany",
+        "foreignKey": "pathogenId"
+      }
+    }
   },
   "properties": {
     "pathogenId": {

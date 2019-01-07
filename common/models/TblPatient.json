@@ -7,7 +7,7 @@
       "table": "tbl_patient"
     },
     "relations": {
-      "PatientProbeEingang": {
+      "toProbeEingang": {
         "model": "TblProbeEingang",
         "type": "hasMany",
         "foreignKey": "patientId"

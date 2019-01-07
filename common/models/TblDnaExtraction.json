@@ -7,10 +7,15 @@
       "table": "tbl_dna_extraction"
     },
     "relations": {
-      "DnaExtractionNgs": {
+      "toNgs": {
         "model": "TblNgs",
         "type": "belongsTo",
         "foreignKey": "bactNr"
+      },
+      "toDnaSeq": {
+        "model": "TblDnaSeq",
+        "type": "hasMany",
+        "foreignKey": "prepId"
       }
     }
   },

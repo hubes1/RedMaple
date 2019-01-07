@@ -7,17 +7,17 @@
       "table": "tbl_ngs"
     },
     "relations": {
-      "NgsPathogen": {
+      "toPathogen": {
         "model": "TblPathogen",
         "type": "belongsTo",
         "foreignKey": "pathogenId"
       },
-      "NgsProbe": {
+      "toProbeEingang": {
         "model": "TblProbeEingang",
         "type": "belongsTo",
         "foreignKey": "probeId"
       },
-      "NgsDnaExtraction": {
+      "toDnaExtraction": {
         "model": "TblDnaExtraction",
         "type": "hasMany",
         "foreignKey": "bactNr"

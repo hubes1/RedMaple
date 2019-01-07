@@ -7,12 +7,12 @@
       "table": "tbl_probe_eingang"
     },
     "relations": {
-      "ProbeEingangPatient": {
+      "toPatient": {
         "model": "TblPatient",
         "type": "belongsTo",
         "foreignKey": "patientId"
       },
-      "ProbeEingangNgs": {
+      "toNgs": {
         "model": "TblNgs",
         "type": "hasMany",
         "foreignKey": "probeId"
