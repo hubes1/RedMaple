@@ -6,8 +6,8 @@
   "postgresDS": {
     "host": "147.87.116.213",
     "port": 5432,
-    "url": "postgres://postgres:student@147.87.116.213:5432/ngs-testdb?ssl=true",
-    "database": "ngs-testdb",
+    "url": "postgres://postgres:student@147.87.116.213:5432/rm-test?ssl=true",
+    "database": "rm-test",
     "password": "student",
     "name": "postgresDS",
     "user": "postgres",
